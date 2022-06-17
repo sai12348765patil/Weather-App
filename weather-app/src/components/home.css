@@ -1,0 +1,78 @@
+#searchbar{
+    display: flex;
+    gap: 2%;
+    width: 70%;
+    margin: auto;
+    height: 50px;
+    margin-top: 20px;
+   
+}
+.searchbarsearch{
+    width: 75%;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
+}
+
+.searchbarbutton{
+    border-radius: 20px;
+    width: 20%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#showing_weekly{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 40px;
+}
+#showing_weekly>div{
+    width: 12%;
+    border-radius: 10px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.img11{
+    width: 90%;
+    height: 40%;
+}
+#main_temp_all_div{
+    width: 75%;
+    margin: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+#today_main_temp{
+    display: flex;
+    width: 50%;
+    gap: 10%;
+    margin: auto;
+    height: 200px;
+}
+
+#today_main_temp>h1{
+    font-size: 50px;
+}
+
+#today_main_temp>img{
+    width: 50%;
+    height: 100%;
+}
+#hourly_temp{
+    /* margin-top: 50px; */
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: space-between;
+}
+.prsssure_humadity{
+    display: flex;
+    margin: auto;
+    width: 60%;
+    justify-content: space-between;
+}
+.prsssure_humadity>div{
+    width: 40%;
+    height: 90px;
+    border: 1px solid red;
+    background-color: aliceblue;
+    border-radius: 20px;
+}

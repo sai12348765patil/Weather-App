@@ -1,9 +1,18 @@
 import './App.css';
+import {Location} from "./components/location" ;
+import { Routes ,Route } from 'react-router-dom';
+import Homepage from "./components/home" ;
 
 function App() {
+
   return (
     <div className="App">
-  <h1>Akshay Shelke</h1>
+     
+  
+     <Routes>
+         <Route path="/" element={<Location/>}></Route>
+         <Route path="/homepage" element={<Homepage/>}></Route>
+      </Routes>
     </div>
   );
 }
