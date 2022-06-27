@@ -15,22 +15,31 @@ function Homepage(){
     const { state } = useLocation();
 
     var latt = state.data.latitude ;
-
     var long = state.data.longitude ;
 
-    let [weather , setweather] = useState([]);
+    const [weather , setweather] = useState([]);
+    // const [ans,setans] = useState("");
 
     useEffect(()=>{
-        document.title = "weather app" ;
-        fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latt}&lon=${long}&appid=3858180ec8b550afbff27507d609bd50`)
-        .then((e)=>e.json()).then(res=>setweather(res))
-    }, [])
+        document.title = "weather app" 
+       getdata();
+    }, [latt,long])
 
     let dummy =Math.floor(weather.main.temp - 271) ;
     // let dummy = 10;
 
 
-    console.log(weather);
+function getdata(){
+  return(
+    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latt}&lon=${long}&appid=3858180ec8b550afbff27507d609bd50`)
+    .then((e)=>e.json()).then(res=>setweather(res))
+  )
+}
+// setans(weather.main.temp);
+
+// var ans = weather.main.temp;
+ 
+    console.log(weather.main);
 
 
 
